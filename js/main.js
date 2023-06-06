@@ -16,6 +16,9 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
- 
+
+
+
+
 
 
