@@ -47,6 +47,79 @@ h3{
     min-height: 400px;
 }
 
+/* Contact Us */
+.box 
+  {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .box::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  .borderline
+  {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .borderline::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .borderline::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+
 
 }
 
@@ -83,6 +156,80 @@ p{
 .portfolio_wrapper .card{
     min-height: 500px;
 }
+
+/* Contact Us */
+.box 
+  {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .box::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  .borderline
+  {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .borderline::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .borderline::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+
 
 
 

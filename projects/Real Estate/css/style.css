@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Bg
+{
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/bg/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    
+    margin-top: 150px;
+    padding: 20px;
+}

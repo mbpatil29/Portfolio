@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.box img{
+    margin-left: 5.5px;
+}
+.box:hover{
+    background-color:antiquewhite;
+    transition: 1s;
+}
+
+.Bg
+{
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/illustrations/BgHeading.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    
+    margin-top: 60px;
+    padding: 20px;
+}
+.Bg1
+{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/illustrations/hand.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading1{
+    
+    margin-top: 80px;
+    padding: 20px;
+}

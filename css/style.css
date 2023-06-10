@@ -245,8 +245,100 @@ display: inline;
 /* 4 About */
 .about img{
     height: 500px;
+    margin-top: 50px;
     /* padding-left: 0px; */
 }
+.about .box 
+  {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .about .box::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .about .box::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  .about .borderline
+  {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .about .borderline::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .about .borderline::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+
+  @keyframes animate 
+  {
+  0%
+  {
+    transform: rotate(0deg);
+   }
+   100%
+   {
+    transform: rotate(360deg);
+   }  
+  } 
+  .about .box form{ 
+    position: absolute;
+    inset: 4px;
+    background:black;
+    /* rgba(40, 10, 60, 0.6); */
+    z-index: 2;
+    }
+
 .h3{
     font-size: 40px;
     color: white;
@@ -421,25 +513,117 @@ display: inline;
     color: black;
 }
 
-/* Contact Us */
-.box
-{
-    position: relative;
-    background: #222;
-    border-radius: 8px;
-    /* height: 600px; */
-}
-.box form{
-    inset: 4px;
-    background: #222;
-    padding: 50px 40px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
 
-}
+
+/* Contact Us */
+.box 
+  {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .box::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45feff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  .borderline
+  {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .borderline::before
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .borderline::after
+  {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+
+  @keyframes animate 
+  {
+  0%
+  {
+    transform: rotate(0deg);
+   }
+   100%
+   {
+    transform: rotate(360deg);
+   }  
+  } 
+    .box form{ 
+    position: absolute;
+    inset: 4px;
+    background:black;
+    /* rgba(40, 10, 60, 0.6); */
+    z-index: 2;
+    }
+
+/* Animation Border Ended Code  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact Us end */
+
+
 
 /* Footer Start */
 /* 7 footer */
