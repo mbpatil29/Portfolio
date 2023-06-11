@@ -39,13 +39,79 @@ Table of contents
     --text-white : #fff;
 
 }
+/* Loader Added By Me */
+
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #001300;
+    animation: changeColor 10s linear infinite;
+    z-index:100;
+}
+
+.loader-wrapper .loader {
+    position: relative;
+    display: flex;
+}
+.loader-wrapper h2 {
+    color: #00ff0a; 
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.loader-wrapper .loader .dot {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a,
+        0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+    margin: 20px 10px;
+    transform: scale(0.1);
+    border-radius: 50%;
+    animation: animateDot 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+.loader-wrapper .loader:last-child .dot{
+    animation-delay: calc(-0.1s * var(--i));
+}
+.content{
+    text-align: center;
+    font-size: 2em;
+    color:#fff;
+}
+@keyframes animateDot {
+    0%{
+        transform: scale(0.1);
+    }
+    10%{
+        transform: scale(1);
+    }
+    50%,
+    100%{
+        transform: scale(0.1);
+    }
+}
+@keyframes changeColor{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+/* Loader Ended By Me */
 
 body{
     font-family: 'Poppins' ,sans-serif;
     background-color:#091020;
-
 }
-  
 
 a{
     text-decoration:none;
@@ -232,7 +298,8 @@ display: inline;
     width: 100%;
     height: auto;
     min-height: 650px;
-    background-image: url(../images/imgbg2.jpg);
+    background-color: skyblue ;
+    background-image: url(../images/imgbg3.png);
     background-repeat:no-repeat ;
     background-position: center center;
     background-size: cover;
@@ -520,7 +587,7 @@ display: inline;
   {
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 700px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -608,19 +675,14 @@ display: inline;
     }
 
 /* Animation Border Ended Code  */
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input-field
+{
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+    color:white;
+    transition: 1s;
+}
 /* Contact Us end */
 
 

@@ -17,6 +17,28 @@ navBar.forEach(function (a){
     })
 })
 
+// Form Validation
+// Contact Us
+ function message()
+    {
+        alert("Form Submitted Succesfully...");
+    
+    }
+
+// // End
+
+
+
+// Loader Adding
+window.onload = function(){
+    setTimeout(function(){
+        var loader = document.getElementsByClassName("loader-wrapper")[0];
+        loader.style.display = "none";
+    },4000)
+}
+
+
+// Form Code
 
 
 

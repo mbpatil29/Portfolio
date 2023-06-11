@@ -24,10 +24,44 @@
   <link rel="stylesheet" href="css/responsive-style.css">
 
 </head>
+<!-- Loader Added By Me -->
+<section class="loader-wrapper">
+  <div class="loader">
+      <div class="dot" style="--i:0;"></div>
+      <div class="dot" style="--i:1;"></div>
+      <div class="dot" style="--i:2;"></div>
+      <div class="dot" style="--i:3;"></div>
+      <div class="dot" style="--i:4;"></div>
+      <div class="dot" style="--i:5;"></div>
+      <div class="dot" style="--i:6;"></div>
+      <div class="dot" style="--i:7;"></div>
+      <div class="dot" style="--i:8;"></div>
+      <div class="dot" style="--i:9;"></div>
+  </div> 
+  <h2>LOADING...</h2>
+  <div class="loader">
+      <div class="dot" style="--i:0;"></div>
+      <div class="dot" style="--i:1;"></div>
+      <div class="dot" style="--i:2;"></div>
+      <div class="dot" style="--i:3;"></div>
+      <div class="dot" style="--i:4;"></div>
+      <div class="dot" style="--i:5;"></div>
+      <div class="dot" style="--i:6;"></div>
+      <div class="dot" style="--i:7;"></div>
+      <div class="dot" style="--i:8;"></div>
+      <div class="dot" style="--i:9;"></div>
+  </div> 
+</section>  
+<!-- Loader Ended -->
 
 <!-- added to scroll -->
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+
+
+
+
+
 
   <!-- navbar start -->
   <!-- class added -->
@@ -287,14 +321,39 @@
 
         <div class="row">
             <div class="col-sm-12 text-center mb-4">
-                <span class="subtitle">My Complete project</span>
-                <h2>My Latest Project</h2>
+                <span class="subtitle">My Complete projects</span>
+                <h2>My Latest Projects</h2>
                 <!-- <p>There are many variations of passages of Lorem Ipsum available,<br class="d-none d-md-block">
                     but the majority have suffered alteration.</p> -->
             </div>
         </div>
 
         <div class="row ">
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0 portfolio-inner rounded">
+                <span style="background-image: url('./images/portfolio/Pizza1.png')"></span>
+                
+               
+                <div class="portfolio-text">
+                  <h4 class="text-white mb-4">Pizza Website</h4>
+                 
+                  <div class="d-flex">
+                      <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/Pizza Project/index.html" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                      <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/Pizza Project/index.html"><i class="fa fa-link"></i></a>
+                  </div>
+
+              </div>
+            
+              </div>
+        </div>
+
+
+
+
+
+
+
             <div class="col-lg-3 col-md-6 mb-4  ">
                 <div class="card p-0    portfolio-inner rounded  ">
                     <span style="background-image: url('./images/portfolio/Estate.png')"></span>
@@ -367,35 +426,19 @@
                   </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card p-0 portfolio-inner rounded">
-                    <span style="background-image: url('./images/portfolio/Flowers.png')"></span>
-                    
-                   
-                    <div class="portfolio-text">
-                      <h4 class="text-white mb-4">Ecommerce Flower</h4>
-                     
-                      <div class="d-flex">
-                          <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/e-Commerce Flowers/index.html" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                          <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/e-Commerce Flowers/index.html"><i class="fa fa-link"></i></a>
-                      </div>
-
-                  </div>
-                
-                  </div>
-            </div>
+          
 
             <div class="col-lg-3 col-md-6 mb-4">
               <div class="card p-0 portfolio-inner rounded">
-                  <span style="background-image: url('./images/portfolio/Flowers.png')"></span>
+                  <span style="background-image: url('./images/portfolio/Clinic.png')"></span>
                   
                  
                   <div class="portfolio-text">
-                    <h4 class="text-white mb-4">Ecommerce Flower</h4>
+                    <h4 class="text-white mb-4">Dental Clinic</h4>
                    
                     <div class="d-flex">
-                        <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/e-Commerce Flowers/index.html" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/e-Commerce Flowers/index.html"><i class="fa fa-link"></i></a>
+                        <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/Dental_Clinic/index.html" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square rounded-circle mx-2" href="./projects/Dental_Clinic/index.html"><i class="fa fa-link"></i></a>
                     </div>
 
                 </div>
@@ -482,35 +525,37 @@
                     </div>  
 
                     
-                    <!-- Form Edited -->
+                     <!-- Form Edited -->
                     <div class="row justify-content-center">
                       <div class="col col-lg-10 p-4">
                         <h2 class=" head text-center mb-1"><u class="text-danger">Contact Us</u></h2>
 
                       <div class="mb-3 ">
-                      <label for="exampleFormControlInput1" class="form-label text-white">Username:</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="username">
+                      <label for="exampleFormControlInput1" class="form-label text-white">Name:</label>
+                      <input type="name" class="form-control input-field" id="exampleFormControlInput1 name" placeholder="Name" required="Please Enter Username">
                     </div>
 
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label text-white">Email address:</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+                      <input type="email" class="form-control input-field" id="exampleFormControlInput1 mail" placeholder="name@gmail.com" required>
                     </div>
 
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label text-white">Mobile No:</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="9518XXXX92">
+                      <input type="number" class="form-control input-field" id="exampleFormControlInput1 mobile" placeholder="9518XXXX92" required>
                     </div>
 
                     <div class="mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label text-white">Message:</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message Us"></textarea>
+                      <textarea class="form-control input-field" id="exampleFormControlTextarea1 msg" rows="3" placeholder="Message Us" required></textarea>
                     </div>
+
                     <div class="col text-center mt-2 pt-md-4 ">
-                    <button type="submit" class="main-btn w-75 fw-bold">Submit</button>
+                        <button type="submit" class="main-btn w-75 fw-bold" onclick="message()" >Submit</button>
+                    </div>
+                     
                   </div>
-                  </div>
-                </div>
+                </div> 
                 </form>
                 </div> 
                 </div>
